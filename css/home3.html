@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#8C0000;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111111;
+}
+
+
+
+</style>
+</head>
+<body style="background-color: lightblue;">
+<img src="dbit.png" alt="DBIT" style="float:left;width:150px;height:150px;">
+<br>
+<u>
+<h1 style="text-align:center;font-size:250%;">DEPARTMENT OF INFORMATION TECHNOLOGY</h1>
+</u><br><br>
+ 
+<ul>
+  <li><a href="#home">ADD TABLE</a></li>
+  <li><a href="#news">SEARCH TABLE</a></li>
+  <li><a href="#contact">DELETE TABLE</a></li>
+  <li style="float:right;color:#AF7AC5;text-align: center;"><a href="s3.html">SEARCH</a></li>
+</ul>
+<br>
+
+<form action="action_page.php" oninput="x.value=parseInt(points.value)">
+<table>
+<tr><td><h2 style="float:left"> FACULTY  NAME</h2></td><td>
+ <select name="fac" style="font-size:25px ;color:white;background-color:green;float:left">
+  <option value="nel" >Nilesh Ghavate</option>
+  <option value="tay">Tayyabali Sayyad</option>
+  <option value="jan">Janhavi Baikerikar</option>
+  <option value="aru">Aruna Khubalkar</option>
+</select></td><tr>
+
+<tr><td>
+<h2 style="float:left">TITLE OF PROJECT  </h2></td><td> : 
+ <select name="tit" style="font-size:25px ;color:white;background-color:green">
+  <option value="wp" >Web Programmng</option>
+  <option value="cn">Computer Network</option>
+  <option value="wop">Wordpress</option>
+  <option value="at">Automata Theory</option>
+</select></td></tr>
+  
+<tr><td><h2>START OF PROJECT</h2></td><td> : 
+<input type="date"  name="start"></td></tr>
+<tr><td><h2>END OF PROJECT</h2></td><td> : 
+<input type="date" name="end"><br></td></tr>
+
+
+<tr><td><h2> ID OF STUDENT</h2></td><td> : 
+  <input type="ID" name="usrtel"STYLE="background-color:white;"><br>
+</table>
+
+<br>
+<br>
+<table style="width:100%; border: 3px solid #7B241C;border-collapse: collapse;">
+  <tr>
+<th>SR.NO</th>
+<th>NAME</th>    
+<th>DEPARTMENT</th>
+    <th>CLASS</th>    
+	<th>E-MAIL</th>
+<th>CONTACT</th>
+ 
+</tr>
+  <tr>
+<td>1.</td>
+    <td><input type="ID" name="usrtel"STYLE="background-color:white;"></td>
+    <td><select name="fac" style="font-size:25px ;color:white;background-color:green">
+  <option value="nel"> I.T</option>
+  <option value="tay">COMPS</option>
+  <option value="jan">MECH</option>
+  <option value="aru">EXTC</option>
+</select></td>
+    
+
+    <td><select name="fac" style="font-size:25px ;color:white;background-color:green">
+  <option value="nel"> F.E</option>
+  <option value="tay">S.E</option>
+  <option value="jan">T.E</option>
+  <option value="aru">B.E</option>
+</select></td>
+	<td><input type="ID" name="usrtel"STYLE="background-color:white;"></td>
+<td><input type="ID" name="usrtel"STYLE="background-color:white;"></td>
+  </tr>
+  <tr>
+<td>2.</td>
+    <td><input type="ID" name="usrtel"STYLE="background-color:white;"></td>
+    <td><select name="fac" style="font-size:25px ;color:white;background-color:green">
+  <option value="nel"> I.T</option>
+  <option value="tay">COMPS</option>
+  <option value="jan">MECH</option>
+  <option value="aru">EXTC</option>
+</select></td>
+
+<td><select name="fac" style="font-size:25px ;color:white;background-color:green">
+  <option value="nel"> F.E</option>
+  <option value="tay">S.E</option>
+  <option value="jan">T.E</option>
+  <option value="aru">B.E</option>
+</select></td>
+<td><input type="ID" name="usrtel"STYLE="background-color:white;"></td>
+<td><input type="ID" name="usrtel"STYLE="background-color:white;"></td>
+  </tr>
+  </tr>
+  <tr>
+<td>3</td>
+   <td><input type="ID" name="usrtel"STYLE="background-color:white;"></td>
+    <td><select name="fac" style="font-size:25px ;color:white;background-color:green">
+  <option value="nel"> I.T</option>
+  <option value="tay">COMPS</option>
+  <option value="jan">MECH</option>
+  <option value="aru">EXTC</option>
+</select></td>
+    
+
+    <td><select name="fac" style="font-size:25px ;color:white;background-color:green">
+  <option value="nel"> F.E</option>
+  <option value="tay">S.E</option>
+  <option value="jan">T.E</option>
+  <option value="aru">B.E</option>
+</select></td>
+	<td><input type="ID" name="usrtel"STYLE="background-color:white;"></td>
+<td><input type="ID" name="usrtel"STYLE="background-color:white;"></td>
+  </tr>
+</table>
+<br><br><br>
+<center>
+<input type="reset" style="font-size:35px ; color:#8c0000;background-color:green" onclick="validateinfo()" value="RESET">
+  <input type="submit" style="font-size:35px ; color:#8c0000;background-color:green" onclick="validateinfo()" value="SUBMIT">
+
+   
+ </center><br><br>
+</form> 
+</fieldset>
+
+<a href="kevinlobo160@gmail.com">
+<h2 style="text-align:center; background-color:#8C0000;color: white;"><marquee>Page Designed By Kevin Lobo</marquee></h2>
+</a>
+</body>
+</html>

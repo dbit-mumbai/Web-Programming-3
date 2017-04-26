@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>University of Mumbai</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+    #p01
+    {
+    color:red;
+    font-family:Old English Text MT;
+    text-align:center;
+    font-size:200%;
+    float: center;
+    }
+
+    .final
+   {
+       height: 1350px;
+       width:800px;
+       background-color:white;
+   }
+
+
+    </style>
+    <script src="myscript.js"></script>
+    <script>
+    
+    </script>
+</head>
+<body>
+
+<form name="form" onsubmit="return validateForm()" method="post">
+
+    <center>
+    <div class="final">
+<table>
+		<tr>
+		<td style="width: 5,5%;height: 40%;align:"left" "><img src="download.jpg" style="height:75px; width:75px;left-margin:30px;top-margin:"></td>
+		<td style="width: 94.5%;height: 15%;align:"center" "><p id="p01">University of Mumbai</p></td>
+		</tr>
+
+	</table>
+		<font color="red" size="4"><center>GRADE CARD</center></font>
+<table>
+    <th><a href="form1.html">Home</a></th>
+    <th><a href="grade.html">Grading System</a></th>
+    <th><a href="apply.html">Apply Online</a></th>
+    <th><a href="about.html">About University</a></th>
+</table>
+
+	<fieldset>
+	    <legend>Personal Information :</legend>
+		<br>NAME: <input type="text" name="fname">&nbsp&nbsp&nbsp&nbsp&nbsp
+		<br>
+
+		<br>EXAMINATION: <select name="exam">
+			<option value="SEM1" selected="">FIRST YEAR ENGINEERING SEMESTER l(CBGS)</option>
+			<option value="SEM2" selected="">FIRST YEAR ENGINEERING SEMESTER II(CBGS)</option>
+			<option value="SEM3" selected="">SECOND YEAR ENGINEERING SEMESTER lll(CBGS)</option>
+			<option value="SEM4" selected="">SECOND YEAR ENGINEERING SEMESTER lV(CBGS)</option>
+			<option value="SEM5" selected="">THIRD YEAR ENGINEERING SEMESTER lV(CBGS)</option>
+			<option value="SEM6" selected="">THIRD YEAR ENGINEERING SEMESTER lV(CBGS)</option>
+			<option value="SEM7" selected="">FOURTH YEAR ENGINEERING SEMESTER lV(CBGS)</option>
+			<option value="SEM8" selected="">FOURTH YEAR ENGINEERING SEMESTER lV(CBGS)</option>
+		</select><br>
+
+		<br>
+
+
+		<br>HELD IN :<select name="year">
+			<option value="DEC 2015" selected="">DEC 2015</option>
+			<option value="MAY 2016" selected="">MAY 2016</option>
+			<option value="DEC 2016" selected="">DEC 2016</option>
+			<option value="MAY 2017	" selected="">MAY 2017</option>
+			<option value="DEC 2017" selected="">DEC 2017 </option>
+			<option value="MAY 2018" selected="">MAY2018</option>
+			<option value="DEC 2018" selected="">DEC 2018</option>
+			<option value="MAY 2019" selected="">MAY 2019</option>
+		</select><br>
+		<br>SEAT NUMBER :<input type="number" placeholder="Enter 7 digit number " maxlength="7">
+		<br>
+		<br>REGISTRATION NO. :<input type="number" placeholder="Enter 11 digit number" maxlength="11">
+        <br>
+        <br>Email ID:<input type="Email" name="email" placeholder="Enter Email address">
+        <br>        
+
+
+
+	</fieldset>
+	<br>
+	<fieldset>
+		<br>COURSE CODE :<input type="text">
+        <br>
+		<br>COURSE TITLE :<input type="text">
+        <br>
+        <br>
+        <strong>THEORY :</strong>
+        <br>
+        <br>COURSE CREDITS :<input type="number" onclick="myFunction()" maxlength="2">
+        <br>
+        <br>
+        GRADES:
+        <br>
+		<br>ESE/PR/OR   :<input type="text">
+        <br>
+		<br>IA/TW     :<input type="text">
+        <br>
+		<br>OVERALL     :<input type="text">
+        <br>
+        <br>CREDIT EARNED(C) :<input type="number" onclick="myFunction()" maxlength="2">
+        <br>
+        <br>GRADE POINTS(G) :<input type="number" onclick="myFunction()"maxlength="2">
+        <br>
+        <br>C X G :<input type="number">
+        <br>
+         <br>
+           <strong>PRACTICAL :</strong>
+        <br>
+        <br>COURSE CREDITS :<input type="number" onclick="myFunction()"maxlength="2">
+        <br>
+        <br>
+        GRADES:
+        <br>
+		<br>ESE/PR/OR :<input type="text">
+        <br>
+		<br>IA/TW :<input type="text">
+        <br>
+		<br>OVERALL :<input type="text">
+        <br>
+       <br>CREDIT EARNED(C) :<input type="number"onclick="myFunction()" maxlength="2">
+        <br>
+       <br>GRADE POINTS(G) :<input type="number" onclick="myFunction()" maxlength="2">
+        <br>
+        <br>C X G :<input type="number">
+        <br>
+		<br>
+		<button type="submit" value="Submit" onclick="validateForm()">Submit</button>
+			<button type="reset" value="Reset">Reset</button>
+
+	</fieldset>
+</form>
+    </div>
+    </center>
+</body>
+</html>

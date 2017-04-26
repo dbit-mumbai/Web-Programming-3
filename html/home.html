@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#8C0000;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111111;
+}
+
+
+table, th, td {
+    border: 3px solid #7B241C;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;    
+}
+
+</style>
+</head>
+<body>
+<img src="dbit.png" alt="DBIT" style="float:left;width:160px;height:160px;">
+<br>
+<u>
+<h1 style="text-align:center;font-size:300%;">DEPARTMENT OF INFORMATION TECHNOLOGY</h1>
+</u>
+<br><br>
+ 
+<ul>
+  <li><a href="#home">ADD TABLE</a></li>
+  <li><a href="#news">SEARCH TABLE</a></li>
+  <li><a href="#contact">DELETE TABLE</a></li>
+  <li style="float:right;color:#AF7AC5;text-align: center;"><a href="search.html">SEARCH</a></li>
+</ul>
+<br>
+
+<form action="action_page.php" oninput="x.value=parseInt(points.value)">
+
+<h2 style="float:left"> FACULTY  NAME  : </h2><br>
+ <select name="fac" style="font-size:25px ;color:white;background-color:green;float:left">
+  <option value="nel" >Nilesh Ghavate</option>
+  <option value="tay">Tayyabali Sayyad</option>
+  <option value="jan">Janhavi Baikerikar</option>
+  <option value="aru">Aruna Khubalkar</option>
+</select>
+ 
+ <br>
+<br>
+<br>
+<h2 style="float:left">TITLE OF PROJECT  : </h2><br>
+ <select name="tit" style="font-size:25px ;color:white;background-color:green">
+  <option value="wp" >Web Programmng</option>
+  <option value="cn">Computer Network</option>
+  <option value="wop">Wordpress</option>
+  <option value="at">Automata Theory</option>
+</select>
+  <br>
+<br>
+<br> 
+<h2>START OF PROJECT :</h2>
+<input type="date"  name="start"><br>
+<br>
+<h2>END OF PROJECT :</h2>
+<input type="date" name="end"><br>
+<br><br>
+<h2> ID OF STUDENT :</h2>
+  <input type="ID" name="usrtel"><br>
+
+
+<br>
+<br>
+<table style="width:100%">
+  <tr>
+<th>SR.NO</th>
+<th>NAME</th>    
+<th>DEPARTMENT</th>
+    <th>CLASS</th>    
+	<th>E-MAIL</th>
+<th>CONTACT</th>
+ 
+</tr>
+  <tr>
+<td>1.</td>
+    <td>Jill DIAZ</td>
+    <td>COMP</td>
+    <td>S.E</td>
+	<td>asdf@gmail.com</td>
+<td>903839739</td>
+  </tr>
+  <tr>
+<td>2.</td>
+    <td>EVIN THOMAS</td>
+    <td>I.T</td>
+    <td>S.E</td>
+<td>sgdhdj@gmail.com</td>
+<td>93749274927</td>
+
+  </tr>
+  <tr>
+<td>3</td>
+    <td>JOHN D'SOUZA</td>
+    <td>MECH</td>
+<td>T.E</td>    
+<td>dhdjdd@gmail.com</td>
+<td>9353838637</td>
+ </tr>
+</table>
+<br>
+
+  <input type="submit" style="font-size:30px ; color:#8c0000;background-color:green" onclick="validateinfo()" value="SUBMIT">
+  
+</form> 
+</fieldset>
+
+<a href="kevinlobo160@gmail.com">
+<h2 style="text-align:center; background-color:#8C0000;color: white;"><marquee>Page Designed By Kevin Lobo</marquee></h2>
+</a>
+</body>
+</html>

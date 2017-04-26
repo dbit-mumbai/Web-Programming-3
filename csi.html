@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSI Membership form</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<script type="text/javascript" src="jquery-3.2.0.js"></script>
+<script src="registrationScript.js"></script>	
+
+
+
+</head>
+<body>
+<center style="background-color:#87CEEB;">
+
+<table>
+<tr>
+<td><img src="dbit.png" alt="DBIT LOGO" style="width: 75px;height: 75px;"></td>
+<td><font size="6">DON BOSCO INSTITUTE OF TECHNOLOGY</font><br>
+	<center><font size="4">Computer Society India</font></center></td>
+<td><img src="csi-logo.png" alt="CSI LOGO" style="width: 75px;height: 75px;"></td>
+</tr>
+</table>
+
+</center>
+<hr>
+<center><h2>CSI Membership form</h2></center>
+
+<ul id="m01">
+	  <li id="m01"><a href="#home">Home</a></li>
+	  <li id="m01"><a class="active" href="#register">Register</a></li>
+	  <li id="m01"><a href="#contact">Contact Us</a></li>
+	  <li id="m01"><a href="#about">About Us</a></li>
+	  <li id="m01"><a href="searchby.html">Search</a></li>
+	  <li id="m01"><a href="approve.html">Approve</a></li>
+</ul>
+
+<form name="csiform" id="registration" action="acknowledgement.html" method="post">
+	
+	<fieldset>
+		<legend>Personal Information</legend>
+		
+		<table align="center">
+		
+			<tr>
+				<th>Name</td>
+				<td>:</td>
+				<td><input type="text" name="fname" id="fname"> </td>
+				<td><span id="fname_error"></span></td>
+			</tr>
+			
+			<tr>
+				<th>Middle name</th>
+				<td>:</td>
+				<td><input type="text" name="mname" id="mname" ></td>
+				<td><span id="mname_error"></span></td>
+			</tr>
+		
+			<tr>
+				<th>Last Name</th>
+				<td>:</td>
+				<td><input type="text" name="lname" id="lname"></td>
+				<td><span id="lname_error"></span></td>
+			</tr>
+		
+			<tr>
+				<th>Date Of Birth</th>
+				<td>:</td>
+				<td><input type="Date" name="dob" required></td>
+			</tr>
+			<tr>
+				<th>Gender</th>
+				<td>:</td>
+				<td><input type="radio" name="gen" value="male" >Male<input type="radio" name="gen" value="female"  >Female<td>
+			</tr>
+
+			<tr>		
+				<th>Contact</th>
+				<td>:</td>
+				<td><input type="text" id="contact" name="num"></td>
+				<td><span id="contact_error"></span></td
+				
+			</tr>
+
+			<tr>
+				<th>Email</th>
+				<td>:</td>.
+				<td><input type="email" name="em" id="email"></td>
+				<td><span id="email_error"></span></td
+			</tr>
+
+			<tr>
+				<th>Address</th>
+				<td>:</td>
+				<td><textarea name="addr" rows="3" cols="32" required></textarea></td>
+			</tr>
+
+			<tr>
+				<th>City</th>
+				<td>:</td>
+				<td><input type="text" name="ct" id="city"></td>
+				<td><span id="city_error"></span></td
+			</tr>
+		</table>
+	</fieldset>
+
+	<br>
+
+	<fieldset>
+		<legend>Academic details</legend>
+		<table align="center">
+			<tr>
+				<th>Department</th>
+				<td>:</td>
+				<td><select name="dept" style="max-width:80%;" required>
+						<option value="" selected disabled>--Select Department--</option>
+						<option value="IT" >Information Technology</option>
+						<option value="COMPS">Computer Engineering</option>
+						<option value="EXTC">Electronics and Telecommunications</option>
+						<option value="MECH">Mechanical Engineering</option>
+					</select></td>
+			</tr>
+
+			<tr>
+				<th>Year</th>
+				<td>:</td>
+				<td><select name="yr" style="width:80%" required>
+						<option value="" selected disabled>--Select Class--</option>
+						<option value="FE" >First</option>
+						<option value="SE">Second</option>
+						<option value="TE">Third</option>
+						<option value="BE">Fourth</option>
+					</select></td>
+			</tr>
+			<tr>
+				<th>Student ID</th>
+				<td>:</td>
+				<td><input type="text" name="id" id="sid"></td>
+				<td><span id="sid_error"></span></td>
+			</tr>
+
+		</table>
+	</fieldset>
+
+	<br>
+	
+	<fieldset>
+		<legend>Technical Skills</legend>
+		<table align="center">
+			<tr>
+				<th>Technical skills</th><td>:</td>
+				<td><input type="checkbox" name="skl" value="C">C&nbsp;
+					<input type="checkbox" name="skl" value="C++">C++&nbsp;
+					<input type="checkbox" name="skl" value="java">Java&nbsp;
+					<input type="checkbox" name="skl" value="html">HTML&nbsp;
+					<input type="checkbox" name="skl" value="css">CSS&nbsp;
+					<input type="checkbox" name="skl" value="ps">Photoshop</td>
+			</tr>		
+			<tr>
+				<th>Additional</th>
+				<td>:</td>
+				<td><textarea name="addr" rows="3" cols="32"></textarea></td>
+			</tr>
+		</table>
+	</fieldset>
+	
+	<br>
+	
+	<fieldset>
+		<legend>Membership period</legend>
+		<table>
+			<tr>
+				<th>DBIT-CSI membership</th>
+				<td>:</td>
+				<td><input type="radio" name="dmem" value="1">1 year&nbsp;
+					<input type="radio" name="dmem" value="2">2 years&nbsp;
+					<input type="radio" name="dmem" value="3">3 years&nbsp;
+					<input type="radio" name="dmem" value="">No&nbsp;</td>	
+			</tr>
+			
+			<tr>
+				<th>CSI-India membership</th>
+				<td>:</td>
+				<td><input type="radio" name="imem" value="1">1 year&nbsp;
+					<input type="radio" name="imem" value="2">2 years&nbsp;
+					<input type="radio" name="imem" value="3">3 years&nbsp;
+					<input type="radio" name="imem" value="4">Lifetime&nbsp;
+					<input type="radio" name="imem" value="">No&nbsp;
+				</td>
+			</tr>
+
+			<tr>
+				<th>Amount to be paid</th>
+				<td>:</td>
+				<td>&#8377;<input type="text" name="amt" id="amount" disabled></td>
+			</tr>
+		</table>
+	</fieldset>
+<script src="myvalidate.js"></script> 
+<center>
+<br>
+<button type="submit" value="Submit" id="submitButton"  >Submit</button> 
+<button type="reset" value="Reset">Reset</button><br></center>
+</form>
+ 
+</body>
+</html>
