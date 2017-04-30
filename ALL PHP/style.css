@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+  <title>Untitled</title>
+</head>
+
+<body>
+
+
+#about1
+{
+    color:black;
+    text-align: center;
+}
+
+
+    body
+    {
+        background-color: 	#dbdbdb;
+    }
+
+  th
+  {
+      color: red;
+      padding:20px;
+  }
+  tr
+  {
+        text-align:center;
+  }
+  #p01
+  {
+    padding:20px;
+    text-align:right;
+     color: red;
+  }
+  #p03
+  {
+      padding: 20px;
+  }
+
+
+
+  images
+  {
+	left-margin:32px;
+	top-margin:25px;
+	}
+
+</body>
+
+</html>
